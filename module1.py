@@ -27,13 +27,13 @@ st.title('Covid death count predictor')
 
 st.header('Enter the Details:')
 
-hospitalized = st.number_input('hospitalized:', min_value=10, max_value=100000000.0, value=1.0)
-hospitalizedCurrently = st.number_input('hospitalizedCurrently:', min_value=10, max_value=100000000.0, value=1.0)
-hospitalizedIncrease = st.number_input('hospitalizedIncrease:', min_value=10, max_value=100000000.0, value=1.0)
-negativeIncrease = st.number_input('negativeIncrease:', min_value=10, max_value=100000000.0, value=1.0)
-positiveIncrease = st.number_input('positiveIncrease:',min_value=10, max_value=100000000.0, value=1.0)
-totalTestResultsIncrease = st.number_input('totalTestResultsIncrease:',min_value=10, max_value=100000000.0, value=1.0)
-recovered = st.number_input('recovered:', min_value=10, max_value=100000000.0, value=1.0)
+hospitalized = st.number_input('hospitalized:')
+hospitalizedCurrently = st.number_input('hospitalizedCurrently:')
+hospitalizedIncrease = st.number_input('hospitalizedIncrease:')
+negativeIncrease = st.number_input('negativeIncrease:')
+positiveIncrease = st.number_input('positiveIncrease:')
+totalTestResultsIncrease = st.number_input('totalTestResultsIncrease:')
+recovered = st.number_input('recovered:')
 
 
 if st.button('Predict Death'):
