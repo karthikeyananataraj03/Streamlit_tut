@@ -2,6 +2,7 @@
 import xgboost as xgb
 import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df= pd.read_csv("Stremlit_data.csv")
 plot1 = df.plot.line(x="date",y="death",figsize = (10,6))
