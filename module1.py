@@ -3,6 +3,9 @@ import xgboost as xgb
 import streamlit as st
 import pandas as pd
 
+df= pd.read_csv("Streamlit_data.csv")
+plot1 = df.plot.line(x="date",y="death",figsize = (10,6))
+st.pyplot(fig=plot1)
 
 #Loading up the Regression model we created
 model = xgb.XGBRegressor()
