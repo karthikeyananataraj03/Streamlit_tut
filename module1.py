@@ -46,4 +46,4 @@ recovered = st.number_input('recovered:')
 
 if st.button('Predict Death'):
     Death = predict(hospitalized,hospitalizedCurrently,hospitalizedIncrease,negativeIncrease,positiveIncrease,totalTestResultsIncrease,recovered)
-    st.success(f'The predicted deaths  ${Death[0]:.2f} people')
+    st.success(f'The predicted deaths is : {Death[0]:.2f} people')
