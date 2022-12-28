@@ -8,7 +8,7 @@ df= pd.read_csv("Stremlit_data.csv")
 df = df.sort_values('date', ascending=False)
 
 st.title('Covid death count predictor')
-st.area_chart(data=df, x='date', y=['deathIncrease', 'hospitalizedIncrease', 'inIcuCurrently'], width=0, height=0, use_container_width=True)
+st.line_chart(data=df, x='date', y=['deathIncrease', 'hospitalizedIncrease', 'inIcuCurrently'], width=0, height=0, use_container_width=True)
 
 
 #Loading up the Regression model we created
