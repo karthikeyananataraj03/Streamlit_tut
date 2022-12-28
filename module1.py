@@ -5,8 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df= pd.read_csv("Stremlit_data.csv")
-df = df.sort_values('1')
-
+df = df.sort_values('date', ascending=False)
 st.line_chart(data=df, x=date, y=death, width=0, height=0, use_container_width=True)
 
 
