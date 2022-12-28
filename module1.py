@@ -5,10 +5,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df= pd.read_csv("Stremlit_data.csv")
-plot1 = df.plot.line(x="date",y="death",figsize = (10,6))
-st.pyplot(fig=plot1)
+st.line_chart(data=df, *, x=date, y=death, width=0, height=0, use_container_width=True)
+
 
 #Loading up the Regression model we created
+
 model = xgb.XGBRegressor()
 model.load_model('xgb_model.json')
 
